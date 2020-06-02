@@ -1,0 +1,68 @@
+body {
+  background-color: #1289a7;
+}
+
+.main {
+  text-align: center;
+  margin-top: 150px;
+}
+.titol {
+  font-family: "Dancing Script", cursive;
+  color: wheat;
+  font-size: 50px;
+}
+.btn {
+  margin-top: 50px;
+  float: center;
+}
+footer {
+  text-align: center;
+  margin-top: 150px;
+  font-family: "Dancing Script", cursive;
+  color: wheat;
+  font-size: 25px;
+}
+h2 {
+  text-align: center;
+  color: wheat;
+  font-family: "Dancing Script", cursive;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 50px;
+}
+
+form {
+  margin-top: 120px;
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background-color: transparent;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+label {
+  font-family: "Dancing Script", cursive;
+  color: wheat;
+  text-align: center;
+  font-size: 25px;
+}
+#enviar,
+#enviarRegistre {
+  width: 100%;
+}
+::placeholder {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+/* OPCIONS.PHP */
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: wheat;
+  text-align: center;
+  padding: 80px;
+  font-size: 50px;
+}
+.opcions {
+  font-family: "Dancing Script", cursive;
+}
