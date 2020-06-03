@@ -18,6 +18,17 @@
 
 <body>
 
+    <?php
+
+    session_start();
+
+    if (!isset($_SESSION["email"])) {
+
+        header("location:login.html");
+    }
+
+    ?>
+
     <h1>Escull una opció</h1>
 
     <div class="opcions">
@@ -25,8 +36,8 @@
             <div class="mx-auto">
                 <button type="button" class="btn btn-dark btn-lg">Introdueix un album</button>
                 <button type="button" class="btn btn-dark btn-lg">Consulta albums</button>
-                <button type="button" class="btn btn-dark btn-lg">Modifica un album</button>
-                <button type="button" class="btn btn-dark btn-lg">Esborra un album</button>
+                <button type="button" class="btn btn-dark btn-lg">Modifica albums</button>
+                <button type="button" class="btn btn-dark btn-lg">Esborra albums</button>
             </div>
         </div>
     </div>

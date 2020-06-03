@@ -1,7 +1,5 @@
 window.onload = function () {
-  document
-    .getElementById("enviarRegistre")
-    .addEventListener("click", function (e) {
+  document.getElementById("enviar").addEventListener("click", function (e) {
       var email = document.getElementById("email").value,
         password = document.getElementById("pass").value,
         confirmPass = document.getElementById("confirmPass").value;

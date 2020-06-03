@@ -15,22 +15,23 @@
   <!--GOOGLE FONTS-->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
 
-  <!--JS FILE-->
-  <script src="js/validacioForm.js"></script>
+  <!--JS FILE
+  <script src="js/validacioForm.js"></script>-->
+
 </head>
 
 <body>
 
   
-  <form action="" method="post">
+  <form action="login.php" method="post">
     <h2>Login</h2>
     <div class="form-group">
       <label for="mail">Introdueix l´email</label>
-      <input type="email" class="form-control" id="email" placeholder="Email" />
+      <input type="email" class="form-control" id="email" placeholder="Email" name="email" />
     </div>
     <div class="form-group">
       <label for="pass">Introdueix el password</label>
-      <input type="password" class="form-control" id="pass" placeholder="Password" />
+      <input type="password" class="form-control" id="pass" placeholder="Password" name="pass"/>
     </div>
 
     <button type="submit" class="btn btn-dark" id="enviar">Enviar</button>

@@ -22,6 +22,9 @@ footer {
   color: wheat;
   font-size: 25px;
 }
+
+/* LOGIN.HTML I REGISTRE.HTML*/
+
 h2 {
   text-align: center;
   color: wheat;
@@ -46,8 +49,7 @@ label {
   text-align: center;
   font-size: 25px;
 }
-#enviar,
-#enviarRegistre {
+#enviar{
   width: 100%;
 }
 ::placeholder {
