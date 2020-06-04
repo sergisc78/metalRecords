@@ -5,10 +5,10 @@
     $password = $_POST["password"];
     $confirmarPass = $_POST["confirmarPass"];
 
-    $pass_xifrat=password_hash($password,PASSWORD_DEFAULT);
-    $confirmPass_xifrat=password_hash($confirmarPass,PASSWORD_DEFAULT);
+    /*$pass_xifrat=password_hash($password,PASSWORD_DEFAULT);
+    $confirmPass_xifrat=password_hash($confirmarPass,PASSWORD_DEFAULT);*/
 
-    password_verify($password,$pass_xifrat);
+    
 
     try {
         $connexio = new PDO("mysql:host=localhost;dbname=metalrecords", "root", "");
@@ -21,7 +21,7 @@
 
         $resultat=$connexio->prepare($sql);
 
-        $resultat->execute(array(":mail"=>$mail,":password"=>$pass_xifrat,":confirmarPass"=>$confirmPass));
+        $resultat->execute(array(":mail"=>$mail,":password"=>$password,":confirmarPass"=>$confirmaPass));
 
         header("Location:index.html");
 

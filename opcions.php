@@ -34,10 +34,10 @@
     <div class="opcions">
         <div class="row">
             <div class="mx-auto">
-                <button type="button" class="btn btn-dark btn-lg">Introdueix un album</button>
-                <button type="button" class="btn btn-dark btn-lg">Consulta albums</button>
-                <button type="button" class="btn btn-dark btn-lg">Modifica albums</button>
-                <button type="button" class="btn btn-dark btn-lg">Esborra albums</button>
+                <a href="insertar.html" type="button" class="btn btn-dark btn-lg">Introdueix un album</a>
+                <a href="#" type="button" class="btn btn-dark btn-lg">Consulta albums</a>
+                <a href="#" type="button" class="btn btn-dark btn-lg">Modifica albums</a>
+                <a href="#" type="button" class="btn btn-dark btn-lg">Esborra albums</a>
             </div>
         </div>
     </div>

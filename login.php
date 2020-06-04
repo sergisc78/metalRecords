@@ -9,7 +9,7 @@ try {
 
     $connexio->exec("SET CHARACTER SET utf8");
 
-    $sql = "SELECT * FROM users WHERE email= :email AND password= :pass";
+    $sql = "SELECT * FROM users WHERE email= ? AND password= ?";
 
     $resultat = $connexio->prepare($sql);
 
@@ -17,35 +17,40 @@ try {
 
     $password = htmlentities(addslashes($_POST["pass"]));
 
-    $resultat->bindValue(":email", $email);
+    $resultat->bindParam(1, $email);
 
-    $resultat->bindValue(":pass", $password);
+    $resultat->bindParam(2, $password);
 
     $resultat->execute();
 
     $numeroUsuarisInsertats = $resultat->rowCount();
 
-    $registre=$resultat->fetch(PDO::FETCH_ASSOC);
+    /*if ($numeroUsuarisInsertats !=0) {
+        
 
-    if(password_verify($password,$registre['password'])){
-        echo "Password correcte";
-    }
+        if (password_verify($password, $numeroUsuarisInsertats['password'])) {
 
-    if ($numeroUsuarisInsertats != 0 ) {
+            session_start();
 
-       session_start();
+            $_SESSION["email"] = $_POST["email"];
+            
+            header("Location:opcions.php");
+        } else {
+
+            header("Location:login.html");
+        }
+    }*/
+
+    if ($numeroUsuarisInsertats != 0) {
+
+        session_start();
 
         $_SESSION["email"] = $_POST["email"];
 
         header("Location:opcions.php");
-
-        
-        
     } else {
         header("Location:login.html");
     }
-
-
 } catch (Exception $e) {
     die("Error" . $e->getMessage());
 }
