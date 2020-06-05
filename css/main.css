@@ -68,3 +68,11 @@ h1 {
 .opcions {
   font-family: "Dancing Script", cursive;
 }
+h3{
+  text-align: center;
+  color: black;
+  font-family: "Dancing Script", cursive;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 50px;
+}
