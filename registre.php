@@ -11,7 +11,7 @@ $confirmarPass = $_POST["confirmarPass"];
 
 try {
 
-    
+
     $connexio = new PDO("mysql:host=localhost;dbname=metalrecords", "root", "");
 
     $connexio->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -55,7 +55,7 @@ try {
 
 <body>
 
-    <h1 style="text-align: center;margin-top:auto">Benvingut /da  <?php echo $mail; ?> .T´has donat d´alta correctament.En breu et redigirem a la plana d´opcions</h1>
+    <h1 style="text-align: center;margin-top:auto">Benvingut /da <?php echo $mail; ?> .T´has donat d´alta correctament.En breu et redigirem a la plana d´opcions</h1>
 
     <footer>
         Sergi Sánchez 2020 @Copyright

@@ -23,26 +23,22 @@
     />
   </head>
   <body>
-
-
-    <form action="insertar.php" method="post">
-        <h2>Inserta un nou album</h2>
-        <div class="form-group">
-          <label for="banda">Banda</label>
-          <input type="text" class="form-control" id="banda" placeholder="Introdueix el nom de la banda" name="banda" />
-        </div>
-        <div class="form-group">
-          <label for="titol">Títol del disc</label>
-          <input type="text" class="form-control" id="titol" placeholder="Títol" name="titol"/>
-        </div>
-
-        <div class="form-group">
-            <label for="text">Any de llançament</label>
-            <input type="text" class="form-control" id="any" placeholder="Any" name="any"/>
-          </div>
-    
-        <button type="submit" class="btn btn-dark" name="enviar" id="enviar">Enviar</button>
-      </form>
+    <form action="consulta.php" method="get">
+      <h2>Consulta albums introduïts</h2>
+      <div class="form-group">
+        <label for="banda">Banda</label>
+        <input
+          type="text"
+          class="form-control"
+          id="banda"
+          placeholder="Introdueix el nom de la banda"
+          name="banda"
+        />
+      </div>
+      <button type="submit" class="btn btn-dark" name="buscar" id="buscar">
+        Buscar
+      </button>
+    </form>
 
     <footer>
       Sergi Sánchez 2020 @Copyright
