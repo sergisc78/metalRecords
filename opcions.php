@@ -36,7 +36,7 @@
             <div class="mx-auto">
                 <a href="insertar.html" type="button" class="btn btn-dark btn-lg">Introdueix un album</a>
                 <a href="consulta.html" type="button" class="btn btn-dark btn-lg">Consulta albums</a>
-                <a href="#" type="button" class="btn btn-dark btn-lg">Modifica albums</a>
+                <a href="modifica.html" type="button" class="btn btn-dark btn-lg">Modifica albums</a>
                 <a href="#" type="button" class="btn btn-dark btn-lg">Esborra albums</a>
             </div>
         </div>

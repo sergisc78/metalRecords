@@ -41,6 +41,7 @@
 
         $bandesInsertades = $resultat->rowCount();
 
+
         if ($bandesInsertades != 0) {
 
             /* while ($registre = $resultat->fetch(PDO::FETCH_ASSOC)) {
@@ -50,14 +51,19 @@
             echo  "Any:" . $registre['any'] . "<br>";
         }*/
 
-
+            echo "<table>";
+            echo "<tr><th>Registre</th><th>Banda</th><th>Títol</th><th>Any</th>";
+            $i = 0;
 
             foreach ($resultat as $resultats) {
+                $i++;
+                echo "<tr><td>" . $i . "</td><td>" . $resultats['nomBanda'] . " </td><td>" . $resultats['titol'] . "</td><td>" . $resultats['any'] . "</td></tr>";
 
-                echo " Banda:" . $resultats['nomBanda'] . " Títol " . $resultats['titol'] . " Any " . $resultats['any'];
+                // echo " Banda:" . $resultats['nomBanda'] . " Títol " . $resultats['titol'] . " Any " . $resultats['any'];
             }
 
-            echo "<br>";
+            echo "<a href='consulta.html' type='button' class='btn btn-dark' style='margin-right:10px;float:right';>Tornar</a>";
+
 
             $resultat->closeCursor();
         } else {
