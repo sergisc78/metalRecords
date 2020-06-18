@@ -33,7 +33,7 @@
 
         $connexio->exec("SET CHARACTER SET utf8");
 
-        $sql = "SELECT nomBanda, titol, any FROM albums WHERE nomBanda=?";
+        $sql = "SELECT id,nomBanda, titol, any FROM albums WHERE nomBanda=?";
 
         $resultat = $connexio->prepare($sql);
 
@@ -52,25 +52,33 @@
         }*/
 
             echo "<table>";
-            echo "<tr><th>Registre</th><th>Banda</th><th>Títol</th><th>Any</th>";
+            echo "<tr><th>Registre</th><th>ID</th><th>Banda</th><th>Títol</th><th>Any</th>";
             $i = 0;
 
             foreach ($resultat as $resultats) {
                 $i++;
-                echo "<tr><td>" . $i . "</td><td>" . $resultats['nomBanda'] . " </td><td>" . $resultats['titol'] . "</td><td>" . $resultats['any'] . "</td></tr>";
+                echo "<tr><td>" . $i . "</td>
+                <td>" . $resultats['id'] . " </td>
+                <td>" . $resultats['nomBanda'] . " </td>
+                <td>" . $resultats['titol'] . "</td>
+                <td>" . $resultats['any'] . "</td>
+                <td><a href='modificar.php?id=$resultats[id] & band=$resultats[nomBanda] & titol=$resultats[titol] & any=$resultats[any]' type='button' class='btn btn-dark btn-sm'>Modificar</a></td>
+                <td><a href='esborrar.php?id=$resultats[id] & band=$resultats[nomBanda] & titol=$resultats[titol] & any=$resultats[any]'  type='button' class='btn btn-dark btn-sm'>Esborrar</a></td></tr>";
+
+               
 
                 // echo " Banda:" . $resultats['nomBanda'] . " Títol " . $resultats['titol'] . " Any " . $resultats['any'];
             }
-
-            echo "<a href='consulta.html' type='button' class='btn btn-dark' style='margin-right:10px;float:right';>Tornar</a>";
-
-
+    
             $resultat->closeCursor();
+            echo "<a href='consulta.html' type='button' class='btn btn-dark' style='margin-right:10px;float:right;'>Tornar</a>";
+            
         } else {
             echo "<h1> $missatgeError<h1>";
             echo "<a href='consulta.html' type='button' class='btn btn-dark btn-lg'>Tornar</a>";
             echo "<footer>Sergi Sánchez 2020 @Copyright</footer>";
         }
+       
     } catch (Exception $e) {
 
         die("Error" . $e->getMessage());

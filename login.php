@@ -3,11 +3,13 @@
 
 
 try {
-    $connexio = new PDO("mysql:host=localhost;dbname=metalrecords", "root", "");
+
+    include("connexio.php");
+   /* $connexio = new PDO("mysql:host=localhost;dbname=metalrecords", "root", "");
 
     $connexio->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $connexio->exec("SET CHARACTER SET utf8");
+    $connexio->exec("SET CHARACTER SET utf8");*/
 
     $sql = "SELECT * FROM users WHERE email= ? AND password= ?";
 

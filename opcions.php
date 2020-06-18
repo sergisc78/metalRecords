@@ -20,6 +20,7 @@
 
     <?php
 
+
     session_start();
 
     if (!isset($_SESSION["email"])) {
@@ -27,9 +28,21 @@
         header("location:login.html");
     }
 
+
+
     ?>
 
+    <div class="dropdown">
+        <button type="button" class="btn btn-dark dropdown-toggle" id="sessio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <?php echo " " . $_SESSION["email"]; ?><span class="caret"></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="index.html">Exit</a>
+        </div>
+
+    </div>
     <h1>Escull una opció</h1>
+
 
     <div class="opcions">
         <div class="row">
@@ -45,6 +58,11 @@
     <footer>
         Sergi Sánchez 2020 @Copyright
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 </body>
 

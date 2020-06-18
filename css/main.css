@@ -1,5 +1,6 @@
 body {
   background-color: #1289a7;
+  margin: 50px;
 }
 
 .main {
@@ -35,7 +36,6 @@ h2 {
 }
 
 form {
-  margin-top: 120px;
   margin: auto;
   width: 50%;
   max-width: 500px;
@@ -50,6 +50,7 @@ label {
   font-size: 25px;
 }
 #enviar,
+#enviarRegistre,
 #buscar {
   width: 100%;
 }
@@ -64,7 +65,11 @@ h1 {
   color: wheat;
   text-align: center;
   padding: 80px;
-  font-size: 40px;
+  font-size: 60px;
+}
+#sessio {
+  margin-top: auto;
+  float: right;
 }
 .opcions {
   font-family: "Dancing Script", cursive;
@@ -88,20 +93,19 @@ th,
 td {
   border: hidden;
   border-collapse: collapse;
-  margin:auto;
+  margin: auto;
 }
 th,
 td {
   padding: 15px;
 }
-th{
+th {
   text-align: left;
   font-size: 40px;
   color: black;
   font-family: "Dancing Script", cursive;
-
 }
-td{
+td {
   font-size: 25px;
   color: wheat;
   font-family: "Dancing Script", cursive;
