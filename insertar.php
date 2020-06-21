@@ -34,31 +34,27 @@
 
         $connexio->exec("SET CHARACTER SET utf8");
 
+
         $sql = "INSERT INTO albums (nomBanda,titol, any) values (?,?,?)";
 
         $resultat = $connexio->prepare($sql);
 
         $resultat->execute(array($band, $titol, $any));
 
+        echo "<a href='opcions.php' type='button'  class='btn btn-dark btn-lg' style='float:right;margin:auto'>Tornar</a>";
+        echo "<h1 >L´album s´ha introduït correctament a la base de dades</h1>";
+        echo "<h2>Has introduït el següent registre:</h2>";
+        echo "<h3>Banda:  $band</h3>";
+        echo "<h3>Títol:  $titol</h3>";
+        echo "<h3>Any:  $any</h3>";
 
-
-        //header("refresh:15;url=opcions.php");
-
-        //if ($_POST['titol'] == $titol && $_POST['banda'] == $banda) {
-
-            echo "<h1 >L´album s´ha introduït correctament a la base de dades</h1>";
-            echo "<h2>Has introduït el següent registre:</h2>";
-            echo "<h3>Banda:  $band</h3>";
-            echo "<h3>Títol:  $titol</h3>";
-            echo "<h3>Any:  $any</h3>";
-            echo "<a href='opcions.php' type='button' class='btn btn-dark btn-lg'>Menú</a>";
-            echo "<footer>Sergi Sánchez 2020 @Copyright</footer>";
-       // } else {
+        echo "<footer>Sergi Sánchez 2020 @Copyright</footer>";
+        /*} else {
 
             echo "<h1> $missatgeError<h1>";
             echo "<a href='insertar.html' type='button' class='btn btn-dark btn-lg'>Tornar</a>";
             echo "<footer>Sergi Sánchez 2020 @Copyright</footer>";
-       // }
+        }*/
     } catch (Exception $e) {
         die("Error" . $e->getMessage());
         echo " Hi ha un error  a la línia" . $e->getLine();

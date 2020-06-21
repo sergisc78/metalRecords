@@ -90,7 +90,7 @@
         <button type=" submit" class="btn btn-dark" name="modificar" id="enviar">Modifica</button>
     </form>
 
-    <a href='opcions.php' type='button' class='btn btn-dark' style="margin-left: 640px;">Tornar</a>
+    <a href='opcions.php' type='button' class='btn btn-dark' style="margin-left: 590px;">Tornar</a>
 
     <footer>
         Sergi Sánchez 2020 @Copyright

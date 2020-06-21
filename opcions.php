@@ -38,6 +38,7 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="index.html">Exit</a>
+            <?php session_destroy(); ?>
         </div>
 
     </div>
@@ -47,10 +48,8 @@
     <div class="opcions">
         <div class="row">
             <div class="mx-auto">
-                <a href="insertar.html" type="button" class="btn btn-dark btn-lg">Introdueix un album</a>
-                <a href="consulta.html" type="button" class="btn btn-dark btn-lg">Consulta albums</a>
-                <a href="modifica.html" type="button" class="btn btn-dark btn-lg">Modifica albums</a>
-                <a href="#" type="button" class="btn btn-dark btn-lg">Esborra albums</a>
+                <a href="insertar.html" type="button" id="BotoOpcions" class="btn btn-dark btn-lg">Introdueix un album</a>
+                <a href="consulta.html" type="button" id="BotoOpcions" class="btn btn-dark btn-lg">Consulta albums</a>
             </div>
         </div>
     </div>

@@ -15,6 +15,13 @@ body {
 .btn {
   margin-top: 50px;
   float: center;
+
+  
+}
+#login,#registre{
+  margin-top: 50px;
+  float: center;
+  font-size: 25px;
 }
 footer {
   text-align: center;
@@ -74,6 +81,11 @@ h1 {
 .opcions {
   font-family: "Dancing Script", cursive;
 }
+#botoOpcions{
+  margin-top: 50px;
+  float: center;
+  font-size: 25px;
+}
 h3 {
   text-align: center;
   color: black;
@@ -85,7 +97,9 @@ h3 {
 a {
   margin: auto;
 }
-
+#tornar{
+  margin-left:585px;
+}
 /*CONSULTA.PHP*/
 
 table,
