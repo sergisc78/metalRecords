@@ -38,9 +38,9 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="index.html">Exit</a>
-            <?php session_destroy(); ?>
+            <!--al posar session_destroy(), dóna problemes, algunes coses deixen de funcionar bé-->
         </div>
-
+        
     </div>
     <h1>Escull una opció</h1>
 

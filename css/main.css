@@ -9,7 +9,7 @@ body {
 }
 .titol {
   font-family: "Dancing Script", cursive;
-  color: wheat;
+  color: white;
   font-size: 50px;
 }
 .btn {
@@ -27,7 +27,7 @@ footer {
   text-align: center;
   margin-top: 150px;
   font-family: "Dancing Script", cursive;
-  color: wheat;
+  color: white;
   font-size: 25px;
 }
 
@@ -35,7 +35,7 @@ footer {
 
 h2 {
   text-align: center;
-  color: wheat;
+  color: white;
   font-family: "Dancing Script", cursive;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -52,7 +52,7 @@ form {
 }
 label {
   font-family: "Dancing Script", cursive;
-  color: wheat;
+  color: white;
   text-align: center;
   font-size: 25px;
 }
@@ -69,7 +69,7 @@ label {
 /* OPCIONS.PHP */
 h1 {
   font-family: "Dancing Script", cursive;
-  color: wheat;
+  color:white;
   text-align: center;
   padding: 80px;
   font-size: 60px;
@@ -121,6 +121,6 @@ th {
 }
 td {
   font-size: 25px;
-  color: wheat;
+  color: white;
   font-family: "Dancing Script", cursive;
 }
